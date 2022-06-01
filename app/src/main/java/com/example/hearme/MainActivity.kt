@@ -41,11 +41,11 @@ class MainActivity : AppCompatActivity() {
             RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
         )
         speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "fr-FR")
-        speechRecognizer.setRecognitionListener(object : RecognitionListener {
+        speechRecognizer?.setRecognitionListener(object : RecognitionListener {
             override fun onReadyForSpeech(bundle: Bundle) {}
             override fun onBeginningOfSpeech() {
-                editText.setText("")
-                editText.setHint("Listening...")
+                editText?.setText("")
+                editText?.setHint("Listening...")
             }
 
             override fun onRmsChanged(v: Float) {}
@@ -53,21 +53,21 @@ class MainActivity : AppCompatActivity() {
             override fun onEndOfSpeech() {}
             override fun onError(i: Int) {}
             override fun onResults(bundle: Bundle) {
-                micButton.setImageResource(R.drawable.ic_mic_black_off)
+                micButton?.setImageResource(R.drawable.ic_mic_black_off)
                 val data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
-                editText.setText(data!![0])
+                editText?.setText(data!![0])
             }
 
             override fun onPartialResults(bundle: Bundle) {}
             override fun onEvent(i: Int, bundle: Bundle) {}
         })
-        micButton.setOnTouchListener(OnTouchListener { view, motionEvent ->
+        micButton?.setOnTouchListener(OnTouchListener { view, motionEvent ->
             if (motionEvent.action == MotionEvent.ACTION_UP) {
-                speechRecognizer.stopListening()
+                speechRecognizer?.stopListening()
             }
             if (motionEvent.action == MotionEvent.ACTION_DOWN) {
-                micButton.setImageResource(R.drawable.ic_mic_black_24dp)
-                speechRecognizer.startListening(speechRecognizerIntent)
+                micButton?.setImageResource(R.drawable.ic_mic_black_24dp)
+                speechRecognizer?.startListening(speechRecognizerIntent)
             }
             false
         })
