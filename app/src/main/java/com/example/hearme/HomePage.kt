@@ -1,7 +1,9 @@
 package com.example.hearme
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.Toast
 
@@ -15,13 +17,17 @@ class HomePage : AppCompatActivity() {
 
         hearButton.setOnClickListener {
             Toast.makeText(this, "Start to hear!", Toast.LENGTH_SHORT).show()
-            // TODO:  
+            // TODO:
+
         }
 
         viewButton.setOnClickListener {
             Toast.makeText(this, "Start to see!", Toast.LENGTH_SHORT).show()
-            // TODO:  
+            // TODO:
+            val versView = Intent(this, SignLanguageRecognitionActivity::class.java)
+            startActivity(versView)
         }
-
     }
+
+
 }

@@ -17,7 +17,7 @@
         <activity
             android:name=".SignLanguageRecognitionActivity"
             android:exported="false"
-            android:label="Show your items"/>
+            android:label="Sign language translation"/>
         <activity
             android:name=".HomePage"
             android:exported="true" >
