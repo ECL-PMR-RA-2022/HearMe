@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_height="wrap_content">
-        <EditText
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/button"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:hint="Tap to Speak"
-            android:id="@+id/text"
-            android:layout_centerInParent="true"
-            />
+            android:fontFamily="@font/roboto_slab"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="HearMe!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/BleuDefault"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:backgroundTint="#F9F8FA"
-            android:paddingRight="10dp"
-            android:src="@drawable/ic_mic_black_off"
-            android:layout_alignParentRight="true"
-            android:id="@+id/button"/>
-    </RelativeLayout>
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ear" />
+
+        <Button
+            android:id="@+id/hearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Ecouter quelq'un"
+            android:backgroundTint="@color/BleuDefault"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/hands"/>
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Interpreter la langue de signe"
+            android:backgroundTint="@color/BleuDefault"/>
+
+    </LinearLayout>
 
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
