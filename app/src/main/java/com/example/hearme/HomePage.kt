@@ -18,14 +18,16 @@ class HomePage : AppCompatActivity() {
         hearButton.setOnClickListener {
             Toast.makeText(this, "Start to hear!", Toast.LENGTH_SHORT).show()
             // TODO:
+            val toHear = Intent(this, SpeechToTextActivity::class.java)
+            startActivity(toHear)
 
         }
 
         viewButton.setOnClickListener {
             Toast.makeText(this, "Start to see!", Toast.LENGTH_SHORT).show()
             // TODO:
-            val versView = Intent(this, SignLanguageRecognitionActivity::class.java)
-            startActivity(versView)
+            val toView = Intent(this, SignLanguageRecognitionActivity::class.java)
+            startActivity(toView)
         }
     }
 

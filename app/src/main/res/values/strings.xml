@@ -2,4 +2,5 @@
     <string name="app_name">HearMe</string>
     <string name="tap_to_translate">Tap to translate</string>
     <string name="text_sign_lang_rec">what he/she says</string>
+    <string name="sign_language">sign language</string>
 </resources>
