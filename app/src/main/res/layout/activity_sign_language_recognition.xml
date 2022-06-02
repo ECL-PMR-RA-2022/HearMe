@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".SignLanguageRecognitionActivity">
 
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -25,15 +29,10 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
         android:autofillHints="@string/text_sign_lang_rec"
+        android:background="@color/white"
         android:ems="10"
+        android:hint="@string/text_sign_lang_rec"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_above="@+id/sign_language_rec"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="0dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
 </RelativeLayout>
