@@ -26,7 +26,7 @@ class HomePage : AppCompatActivity() {
         viewButton.setOnClickListener {
             Toast.makeText(this, "Start to see!", Toast.LENGTH_SHORT).show()
             // TODO:
-            val toView = Intent(this, SignLanguageRecognitionActivity::class.java)
+            val toView = Intent(this, CameraActivity::class.java)
             startActivity(toView)
         }
     }
