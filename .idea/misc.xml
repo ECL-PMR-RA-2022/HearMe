@@ -5,7 +5,13 @@
       <map>
         <entry key="..\:/04centralelille/S8/PMR/HearMe/app/src/main/res/layout/activity_sign_language_recognition.xml" value="0.14130434782608695" />
         <entry key="..\:/04centralelille/S8/PMR/HearMe/app/src/main/res/layout/activity_speech_to_text.xml" value="0.14130434782608695" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_add.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/rectangle.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.30183839247541683" />
+        <entry key="app/src/main/res/layout/tfe_od_activity_camera.xml" value="0.15443840579710144" />
+        <entry key="app/src/main/res/layout/tfe_od_camera_connection_fragment_tracking.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/tfe_od_layout_bottom_sheet.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
