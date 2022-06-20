@@ -18,7 +18,7 @@ class HomePage : AppCompatActivity() {
         hearButton.setOnClickListener {
             Toast.makeText(this, "Start to hear!", Toast.LENGTH_SHORT).show()
             // TODO:
-            val toHear = Intent(this, SpeechToTextActivity::class.java)
+            val toHear = Intent(this, SpeechToText2Activity::class.java)
             startActivity(toHear)
 
         }

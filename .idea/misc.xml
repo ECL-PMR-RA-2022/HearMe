@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/04centralelille/S8/PMR/HearMe/app/src/main/res/layout/activity_sign_language_recognition.xml" value="0.14130434782608695" />
         <entry key="..\:/04centralelille/S8/PMR/HearMe/app/src/main/res/layout/activity_speech_to_text.xml" value="0.14130434782608695" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.336" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.30183839247541683" />
+        <entry key="app/src/main/res/layout/activity_speech_to_text.xml" value="0.3017094017094017" />
+        <entry key="app/src/main/res/layout/activity_speech_to_text2.xml" value="0.3017094017094017" />
       </map>
     </option>
   </component>
